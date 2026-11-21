@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "descricao": "Salário",
+    "tipo": "receita",
+    "categoria": "Salário",
+    "data": "2026-09-05",
+    "valor": 4500.0
+  },
+  {
+    "id": 2,
+    "descricao": "Aluguel do apartamento",
+    "tipo": "despesa",
+    "categoria": "Moradia",
+    "data": "2026-09-08",
+    "valor": 1350.0
+  },
+  {
+    "id": 3,
+    "descricao": "Conta de luz",
+    "tipo": "despesa",
+    "categoria": "Moradia",
+    "data": "2026-09-12",
+    "valor": 187.4
+  },
+  {
+    "id": 4,
+    "descricao": "Supermercado",
+    "tipo": "despesa",
+    "categoria": "Alimentação",
+    "data": "2026-09-14",
+    "valor": 612.35
+  },
+  {
+    "id": 5,
+    "descricao": "Passe de ônibus",
+    "tipo": "despesa",
+    "categoria": "Transporte",
+    "data": "2026-09-15",
+    "valor": 220.0
+  },
+  {
+    "id": 6,
+    "descricao": "Site para cliente",
+    "tipo": "receita",
+    "categoria": "Freelance",
+    "data": "2026-09-20",
+    "valor": 900.0
+  },
+  {
+    "id": 7,
+    "descricao": "Mensalidade da academia",
+    "tipo": "despesa",
+    "categoria": "Saúde",
+    "data": "2026-09-22",
+    "valor": 119.9
+  },
+  {
+    "id": 8,
+    "descricao": "Cinema e lanche",
+    "tipo": "despesa",
+    "categoria": "Lazer",
+    "data": "2026-09-27",
+    "valor": 86.0
+  },
+  {
+    "id": 9,
+    "descricao": "Salário",
+    "tipo": "receita",
+    "categoria": "Salário",
+    "data": "2026-10-05",
+    "valor": 4500.0
+  },
+  {
+    "id": 10,
+    "descricao": "Aluguel do apartamento",
+    "tipo": "despesa",
+    "categoria": "Moradia",
+    "data": "2026-10-08",
+    "valor": 1350.0
+  },
+  {
+    "id": 11,
+    "descricao": "Internet",
+    "tipo": "despesa",
+    "categoria": "Moradia",
+    "data": "2026-10-10",
+    "valor": 99.9
+  },
+  {
+    "id": 12,
+    "descricao": "Supermercado",
+    "tipo": "despesa",
+    "categoria": "Alimentação",
+    "data": "2026-10-13",
+    "valor": 574.8
+  },
+  {
+    "id": 13,
+    "descricao": "Rendimento da poupança",
+    "tipo": "receita",
+    "categoria": "Investimentos",
+    "data": "2026-10-15",
+    "valor": 42.17
+  },
+  {
+    "id": 14,
+    "descricao": "Curso online de JavaScript",
+    "tipo": "despesa",
+    "categoria": "Educação",
+    "data": "2026-10-18",
+    "valor": 149.0
+  },
+  {
+    "id": 15,
+    "descricao": "Farmácia",
+    "tipo": "despesa",
+    "categoria": "Saúde",
+    "data": "2026-10-21",
+    "valor": 63.25
+  },
+  {
+    "id": 16,
+    "descricao": "Aplicativo de transporte",
+    "tipo": "despesa",
+    "categoria": "Transporte",
+    "data": "2026-10-25",
+    "valor": 48.6
+  },
+  {
+    "id": 17,
+    "descricao": "Salário",
+    "tipo": "receita",
+    "categoria": "Salário",
+    "data": "2026-11-05",
+    "valor": 4500.0
+  },
+  {
+    "id": 18,
+    "descricao": "Aluguel do apartamento",
+    "tipo": "despesa",
+    "categoria": "Moradia",
+    "data": "2026-11-08",
+    "valor": 1350.0
+  },
+  {
+    "id": 19,
+    "descricao": "Restaurante",
+    "tipo": "despesa",
+    "categoria": "Alimentação",
+    "data": "2026-11-09",
+    "valor": 132.5
+  },
+  {
+    "id": 20,
+    "descricao": "Venda de livros usados",
+    "tipo": "receita",
+    "categoria": "Outros",
+    "data": "2026-11-10",
+    "valor": 75.0
+  }
+]

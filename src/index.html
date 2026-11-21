@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>Minhas Finanças</title>
+
+</head>
+
+<body>
+    <header >
+
+        <div id="descritivo">
+            <figure>
+                <img src="/assets/Din.png" alt="Logo">
+            </figure>
+            <div>
+                <h1>Minhas Finanças</h1>
+                <h6>Gerenciador Financeiro Pessoal</h6>
+            </div>
+        </div>
+
+        <nav id="menu">
+            <button class="botao" id="importar"><img src="/assets/down-arrow.png" alt="Logo">Importar Json</button>
+            <button class="botao" id="exportar"><img src="/assets/up-arrow.png" alt="Logo">Exportar Json</button>
+            <button class="botao" id="restaurar"><img src="/assets/reload.png" alt="Logo">Restaurar Dados</button>
+        </nav>
+    </header>
+
+
+    <section id="dashboard">
+
+        <div class="receitas">
+            <h2>Receitas</h2>
+    
+            <p>R$ 1.000,00</p>
+        </div>
+
+        <div class="despesas">
+            <h2>Despesas</h2>
+    
+            <p>R$ 500,00</p>
+        </div>
+
+        <div class="saldo">
+            <h2>Saldo do período</h2>
+    
+            <p>R$ 500,00</p>
+        </div>
+
+    </section>
+
+
+    <div class="container">
+
+        <main>
+
+            <div class="tabela-wrapper">
+
+                <legend>Lançamentos</legend>
+
+                <table id="tabela">
+
+                    <tr>
+
+    
+
+                        <section id="filtros">
+
+                            <div id="filtrobusca">
+                                <label for="filtro-descricao"></label>
+                                <input type="text" id="filtro-descricao" placeholder="Buscar por descrição">
+                            </div>
+
+                            <div id="filtrotipo">
+
+                                <label for="filtro-tipo"></label>
+                                <select id="filtro-tipo" name="tipo">
+                                    <option value="todosostipos">Todos os tipos</option>
+                                    <option value="receita">Receita</option>
+                                    <option value="despesas">Despesas</option>
+                                </select>
+                            </div>
+
+                            <div id="filtrocategoria">
+
+                                <label for="filtro-categoria"></label>
+                                <select id="filtro-categoria" name="categoria">
+                                    <option value="todosostipos">Todos as categorias</option>
+                                    <option value="alimentacao">Alimentação</option>
+                                    <option value="transporte">Transporte</option>
+                                    <option value="moradia">Moradia</option>
+                                    <option value="saude">Saúde</option>
+                                    <option value="lazer">Lazer</option>
+                                    <option value="educacao">Educação</option>
+                                    <option value="investimentos">Investimentos</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+
+                            <div id="filtrodata">
+
+                                <label for="filtro-data"></label>
+                                <select id="filtro-data" name="data">
+                                    <option value="todasasdatas">Todos as datas</option>
+
+                                </select>
+                            </div>
+
+        
+
+                    <tr id="numerodelancamentos">
+                        <h6> lançamentos encontrados, ordenados do mais recente</h6>
+                    </tr>
+
+                    <tr>
+                        <th id="entrada">
+                            <h3>Venda de livros usados</h3>
+                            <h5 id="tipo">Outros</h5>
+                            <date>10/11/2026</date>
+                            </thd>
+                    </tr>
+
+                    </section>
+                    </tr>
+
+                </table>
+            </div>
+
+        </main>
+
+        <aside>
+
+            <section id="lancamentos">
+
+                <form class="form_group">
+                    <div id="novolancamento">
+                        <h3 class="heading-3">Novo Lançamento</h3>
+                        <div>
+                            <label for="tarefa">Descrição</label>
+                            <input type="text" id="tarefa" name="tarefa">
+                        </div>
+
+                        <div>
+                            <label for="opcao">Tipo</label>
+                            <div id="novaentradatipo">
+                                <input type="radio" name="opcao" value="despesa"> Despesa
+                                <input type="radio" name="opcao" value="receita"> Receita
+                            </div>
+                        </div>
+
+                        <div id="novaentradavalordata">
+                            <div>
+                                <label for="valor">Valor R$</label>
+                                <input type="text" id="valor" name="valor" step="0.01">
+                            </div>
+                            <div>
+                                <label for="data">Data</label>
+                                <input type="date" id="data" name="data">
+                            </div>
+                        </div>
+
+                        <div id="novaentradacategoria">
+                            <label for="categoria">Categoria</label>
+                            <select id="categoria" name="categoria">
+                                <option value="alimentacao">Alimentação</option>
+                                <option value="transporte">Transporte</option>
+                                <option value="moradia">Moradia</option>
+                                <option value="saude">Saúde</option>
+                                <option value="lazer">Lazer</option>
+                                <option value="educacao">Educação</option>
+                                <option value="investimentos">Investimentos</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+
+                        <div id="novaentradabotoes">
+                            <button id="salvar" class="botao" type="submit">Salvar lançamento</button>
+                            <button id="cancelar" class="botao" type="submit">Cancelar</button>
+                        </div>
+
+                    </div>
+                </form>
+
+            </section>
+
+            <section id="despesasporcategoria">
+                <legend>Despesas por Categoria</legend>
+            </section>
+
+        </aside>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <strong>
+                <p> João Luca Benicio _ Jogos Digitais Unisinos _ 2026 </p>
+            </strong>
+        </div>
+    </footer>
+
+</body>
+
+</html>
