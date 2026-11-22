@@ -59,7 +59,7 @@
 
         <main>
 
-            <div class="tabela-wrapper">
+            <div id="tabela-wrapper">
 
                 <h3 class="heading-3">Lançamentos<h3>
 
@@ -109,18 +109,36 @@
                                 </select>
                             </div>
 
-        
-
                     <tr id="numerodelancamentos">
                         <h6> lançamentos encontrados, ordenados do mais recente</h6>
                     </tr>
 
                     <tr>
-                        <th id="entrada">
-                            <h3>Venda de livros usados</h3>
-                            <h5 id="tipo">Outros</h5>
-                            <date>10/11/2026</date>
-                            </thd>
+                        <th class="entrada">
+
+                            <div class="entradaesquerda">
+
+                                <h3 class="heading-3">Venda de livros usados</h3>
+
+                                <div class="tipoedata">
+                                    <h5 class="tipo">Outros</h5>
+                                    <date>10/11/2026</date> 
+                                </div>
+    
+                            </div>
+
+                            <div class="entradadireita">
+
+                                <h4>R$ <h4>
+
+                                <div class="entradabotoes">
+                                    <button class="editar">Editar</button>
+                                    <button class="excluir" >Excluir</button>
+                                </div>
+
+                            </div>
+
+                        </th>
                     </tr>
 
                     </section>
@@ -187,7 +205,7 @@
             </section>
 
             <section id="despesasporcategoria">
-                <legend>Despesas por Categoria</legend>
+                <legend class="heading-3">Despesas por Categoria</legend>
             </section>
 
         </aside>

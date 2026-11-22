@@ -15,8 +15,6 @@ main{
     max-width: none;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
-    flex: 3;
 }
 
 header{
@@ -97,7 +95,21 @@ input {
     border-top: 3px blueviolet solid;
 }
 
-.receitas,.despesas,.saldo,.tabela-wrapper{
+#tabela-wrapper{
+    background-color:aliceblue;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 8px 16px black;
+    overflow: auto; 
+    padding: 12px;
+}
+
+#tabela{
+    width: 100%;
+}
+
+.receitas,.despesas,.saldo{
     background-color:aliceblue;
     border-radius: 15px;
     padding: 2%;
@@ -152,14 +164,6 @@ input {
     border-radius: 5px;
 }
 
-.tabela-wrapper{
-   overflow: auto;
-}
-
-.tabela-wrapper table{
-    width: 100%;
-}
-
 #filtros{
     gap: 15px;
 }
@@ -169,9 +173,9 @@ input {
     width: 100%;
 }
 
-#entrada{
+.entrada{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color:white;
     border: 2px black solid;
     border-radius: 15px;
@@ -179,11 +183,54 @@ input {
     padding: 1%;
 }
 
-#tipo{
+.entradaentradaesquerda{
+    display: flex;
+    flex-direction: column;
+}
+
+.entradadireita{
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.entradabotoes{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.excluir{
+    background-color: aliceblue;
+    padding: 4px;
+    border-radius: 15px;
+    cursor:pointer;
+}
+
+.editar{
+    background-color:  aliceblue;
+    padding: 4px;
+    border-radius: 15px;
+    cursor:pointer;
+}
+.excluir:hover{
+    background-color:red;
+}
+.editar:hover{
+    background-color: yellow;
+}
+
+.tipoedata{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tipo{
     background-color: aliceblue;
     border: 2px black solid;
     border-radius: 15px;
-    padding: 0.2%;
+    padding: 4px;
 
 }
 
@@ -198,20 +245,6 @@ select{
 select:focus{
     border: 2px black inset;
     box-shadow: 0 8px 16px black;
-}
-
-#excluir{
-    background-color: red;
-}
-
-#editar{
-    background-color: orange;
-}
-#excluir:hover{
-    background-color: rgb(134, 19, 19);
-}
-#editar:hover{
-    background-color: rgb(112, 75, 5);
 }
 
 .container{
@@ -229,10 +262,6 @@ aside{
    margin-left:auto;
    margin-right:auto;
    gap:10px;
-}
-
-#tabela{
-    padding: 16px;
 }
 
 #lancamentos{
@@ -302,14 +331,21 @@ aside{
         flex-direction: row-reverse;
         align-items: center;
     }
-    .tabela-wrapper{
-        width: 100%;
-    }
+
     #filtros{
         display: flex;
         flex-direction: row;
         width: 100%;
 
+    }
+    .entrada{
+        flex-direction: row;
+    }
+    .entradadireita{
+        margin-left:auto;
+    }
+    .entradaentradaesquerda{
+        margin-right: none;
     }
     aside{
         margin-left:auto;
