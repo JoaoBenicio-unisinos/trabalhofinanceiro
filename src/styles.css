@@ -107,6 +107,7 @@ input {
 
 #tabela{
     width: 100%;
+
 }
 
 .receitas,.despesas,.saldo{
@@ -165,7 +166,10 @@ input {
 }
 
 #filtros{
-    gap: 15px;
+    display:flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px;
 }
 
 
@@ -180,12 +184,27 @@ input {
     border: 2px black solid;
     border-radius: 15px;
     justify-content: flex-start;
-    padding: 1%;
+    padding: 8px;
+    gap:12px;
 }
+
 
 .entradaentradaesquerda{
     display: flex;
     flex-direction: column;
+}
+
+.entradatipoedata{
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    font-size:smaller;
+    align-items: center;
+}
+
+.entradanome{
+    display: flex;
+    flex-direction: row;
 }
 
 .entradadireita{
@@ -194,23 +213,29 @@ input {
     align-self: center;
 }
 
+.entradavalor{
+    display:flex;
+    flex-direction: row;
+    margin-right: 124px;
+}
+
 .entradabotoes{
     display: flex;
     flex-direction: row;
-    margin-left: auto;
+    gap:4px;
 }
 
 .excluir{
     background-color: aliceblue;
     padding: 4px;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor:pointer;
 }
 
 .editar{
     background-color:  aliceblue;
     padding: 4px;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor:pointer;
 }
 .excluir:hover{
@@ -218,12 +243,6 @@ input {
 }
 .editar:hover{
     background-color: yellow;
-}
-
-.tipoedata{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
 }
 
 .tipo{
@@ -344,8 +363,8 @@ aside{
     .entradadireita{
         margin-left:auto;
     }
-    .entradaentradaesquerda{
-        margin-right: none;
+    .entradavalor{
+        margin-right: 16px;
     }
     aside{
         margin-left:auto;
